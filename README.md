@@ -26,7 +26,7 @@ WHEN the game is over
 
 THEN I can save my initials and score
 
-<h1> Acceptance Criteria <h1>
+<h1> Acceptance Criteria </h1>
 
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 
