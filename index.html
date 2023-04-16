@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>JavaScript Quiz</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>JavaScript Quiz</h1>
-      <h2>Time Remaining: <span id="time">60</span> seconds</h2>
-      <form id="quiz">
-        <h3>Question 1:</h3>
-        <p>What is the keyword used to declare a variable in JavaScript?</p>
-        <input type="radio" name="q1" value="a">var<br>
-        <input type="radio" name="q1" value="b">let<br>
-        <input type="radio" name="q1" value="c">const<br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Javascript Quiz</title>
+    </head>
 
-        <h3>Question 2:</h3>
-        <p>What is the result of 10 + "20" in JavaScript?</p>
-        <input type="radio" name="q2" value="a">1020<br>
-        <input type="radio" name="q2" value="b">30<br>
-        <input type="radio" name="q2" value="c">NaN<br>
+    <body>
+        <header>
+            <div>
+                <a href="highscores.html"><button class="scores-header" id="view-high-scores">Top Scores</button></a>
+            </div>
+        
+            <div class="timer">
+                <p>Time: 
+                    <span id="timer">0</span>
+                </p>
+            </div>
+        </header>
+        
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="landing" id="start-screen">
+                    <h1>Javascript Quiz Challenge</h1>
+                    <p>Answer the following code-related questions. Keep in mind that incorrect answers will penalize your score!</p>
+                    <button id="start">Start Quiz</button>
+                </div>
+            </div>
 
-        <button type="submit" id="submit">Submit Quiz</button>
-      </form>
-    </div>
-    <script src="quiz.js"></script>
-  </body>
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options"></div>
+            </div>
+
+            <div class="hide" id="quiz-end">
+                <h2>Finish!</h2>
+                <p>Score: <span id="score-final"></span></p>
+                <p>Please enter your name: <input type="text" id="name" max="3" />
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+
+            <div id="feedback" class="feedback hide"></div>
+        </main>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
