@@ -38,4 +38,4 @@ Deployed Webpage:
 
 <h1> Screenshot </h1>
 
-<img src="">
+<img src="Javascript-quiz.png">
